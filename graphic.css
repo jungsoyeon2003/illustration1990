@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ffd96a;
+    font-family:'Noto Sans KR', sans-serif;
+}
+
+.menu{
+    height:180px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.menu a{
+    width:260px;
+    height:90px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    font-size:32px;
+    font-weight:700;
+    color:#005cab;
+}
+
+.current{
+    background:#005cab;
+    color:white !important;
+}
+
+.canvas{
+    position:relative;
+    width:100%;
+    height:720px;
+}
+
+.canvas img{
+    position:absolute;
+}
+
+.canvas section{
+    position:absolute;
+    color:white;
+    font-size:28px;
+    font-weight:700;
+}
+
+/* 이미지 위치 */
+.g1{left:70px; top:120px; width:190px;}
+.g2{left:200px; top:430px; width:120px;}
+.g3{left:440px; top:110px; width:240px;}
+.g4{left:400px; top:310px; width:260px;}
+.g5{left:400px; bottom:10px; width:190px;}
+.g6{right:280px; top:110px; width:270px;}
+.g7{right:420px; top:370px; width:120px;}
+.g8{right:70px; top:90px; width:100px;}
+.g9{right:110px; top:390px; width:170px;}
+.g10{right:270px; top:560px; width:120px;}
+
+/* 숫자 위치 */
+.n1{left:150px; top:205px;}
+.n2{left:250px; top:520px;}
+.n3{left:585px; top:165px;}
+.n4{left:545px; top:375px;}
+.n5{left:505px; top:600px;}
+.n6{right:420px; top:160px;}
+.n7{right:460px; top:455px;}
+.n8{right:110px; top:165px;}
+.n9{right:170px; top:465px;}
+.n10{right:310px; top:635px;}

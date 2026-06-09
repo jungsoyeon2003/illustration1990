@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:black;
+    font-family:'Noto Sans KR', sans-serif;
+}
+
+.menu{
+    height:180px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.menu a{
+    width:300px;
+    height:90px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    font-size:32px;
+    font-weight:700;
+    color: white;
+}
+
+.current{
+    background:white;
+    color:black !important;
+    padding:20px 35px;
+}
+
+.canvas{
+    position:relative;
+    width:100%;
+    height:800px;
+}
+
+.canvas img{
+    position:absolute;
+}
+
+.canvas section{
+    position:absolute;
+    color:black;
+    font-size:28px;
+    font-weight:700;
+}
+
+/* 이미지 위치 */
+
+.b1{left:60px; top:100px; width:160px; }
+.b2{left:310px; top:200px; width:120px;}
+.b3{left:530px; top:90px; width:280px;}
+.b4{left:170px; top:350px; width:120px;}
+.b5{left:90px; bottom:40px; width:110px;}
+.b6{left:420px; top:410px; width:190px;}
+.b7{left:370px; bottom:30px; width:520px;}
+.b8{right:300px; top:100px; width:190px;}
+.b9{right:420px; top:400px; width:140px;}
+.b10{right:225px; bottom:260px; width:110px;}
+.b11{right:100px; top:160px; width:67px;}
+.b12{right:100px; bottom:40px; width:170px;}
+
+/* 숫자 위치 */
+
+.n1{left:140px; top:180px;}
+.n2{left:370px; top:275px;}
+.n3{left:650px; top:200px;}
+.n4{left:210px; top:420px;}
+.n5{left:140px; bottom:100px;}
+.n6{left:490px; top:470px;}
+.n7{left:620px; bottom:130px;}
+.n8{right:400px; top:170px;}
+.n9{right:480px; top:460px;}
+.n10{right:255px; bottom:330px;}
+.n11{right:135px; top:220px;}
+.n12{right:180px; bottom:120px;}
