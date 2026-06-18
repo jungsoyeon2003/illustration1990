@@ -5,7 +5,7 @@
 }
 
 body{
-    background:#FFFFFF;
+    background:#ffffff;
     font-family:'Noto Sans KR', sans-serif;
 }
 
@@ -37,7 +37,7 @@ section{
 }
 
 .hand{
-    background:#FFFFFF;
+    background:#ffffff;
     border-left:3px solid black;
     border-right:3px solid black;
      border-top:3px solid black;
@@ -79,12 +79,12 @@ section a:hover{
 }
 
 .black a{
-    color:white;
+    color:#ffffff;
 }
 
 .blue{
     background:none;
-    color:white;
+    color:#ffffff;
     border:none;
 }
 
