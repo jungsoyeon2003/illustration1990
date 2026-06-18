@@ -31,7 +31,6 @@ body{
 }
 .canvas{
     position:relative;
-    width:100%;
     width:1400px;
     height:720px;
     margin: 0 auto;
@@ -67,10 +66,119 @@ body{
 .n8{right:110px; top:165px;}
 .n9{right:170px; top:465px;}
 .n10{right:310px; top:635px;}
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
     .canvas {
         transform: scale(calc(100vw / 1400));
         transform-origin: top center;
         height: calc(720px * (100vw / 1400));
     }
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        height: auto !important;
+        flex-direction: column !important;
+        padding: 24px 12px !important;
+        gap: 16px !important;
+    }
+    .menu a {
+        width: 100% !important;
+        max-width: 280px !important;
+        height: 60px !important;
+        font-size: 22px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .current {
+        padding: 10px 20px !important;
+    }
+    .canvas {
+        transform: none !important;
+        transform-origin: initial !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+        padding: 20px !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+    }
+    .canvas a {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .canvas a:nth-child(odd) {
+        aspect-ratio: 1 / 1 !important;
+        background: none !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+    .canvas img {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+    }
+    .canvas a:nth-child(even) {
+        pointer-events: none !important;
+        z-index: 2 !important;
+    }
+    .canvas a:nth-child(even) section {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        right: auto !important;
+        bottom: auto !important;
+        background: #005cab !important;
+        color: white !important;
+        border: 1px solid white !important;
+        width: 30px !important;
+        height: 30px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+    /* Grid Row & Column pairings for 10 items */
+    .canvas a:nth-child(1), .canvas a:nth-child(2) { grid-column: 1 !important; grid-row: 1 !important; }
+    .canvas a:nth-child(3), .canvas a:nth-child(4) { grid-column: 2 !important; grid-row: 1 !important; }
+    .canvas a:nth-child(5), .canvas a:nth-child(6) { grid-column: 1 !important; grid-row: 2 !important; }
+    .canvas a:nth-child(7), .canvas a:nth-child(8) { grid-column: 2 !important; grid-row: 2 !important; }
+    .canvas a:nth-child(9), .canvas a:nth-child(10) { grid-column: 1 !important; grid-row: 3 !important; }
+    .canvas a:nth-child(11), .canvas a:nth-child(12) { grid-column: 2 !important; grid-row: 3 !important; }
+    .canvas a:nth-child(13), .canvas a:nth-child(14) { grid-column: 1 !important; grid-row: 4 !important; }
+    .canvas a:nth-child(15), .canvas a:nth-child(16) { grid-column: 2 !important; grid-row: 4 !important; }
+    .canvas a:nth-child(17), .canvas a:nth-child(18) { grid-column: 1 !important; grid-row: 5 !important; }
+    .canvas a:nth-child(19), .canvas a:nth-child(20) { grid-column: 2 !important; grid-row: 5 !important; }
+}
+@media screen and (max-width: 480px) {
+    .canvas {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        padding: 16px !important;
+    }
+    .canvas a:nth-child(1), .canvas a:nth-child(2) { grid-column: 1 !important; grid-row: 1 !important; }
+    .canvas a:nth-child(3), .canvas a:nth-child(4) { grid-column: 1 !important; grid-row: 2 !important; }
+    .canvas a:nth-child(5), .canvas a:nth-child(6) { grid-column: 1 !important; grid-row: 3 !important; }
+    .canvas a:nth-child(7), .canvas a:nth-child(8) { grid-column: 1 !important; grid-row: 4 !important; }
+    .canvas a:nth-child(9), .canvas a:nth-child(10) { grid-column: 1 !important; grid-row: 5 !important; }
+    .canvas a:nth-child(11), .canvas a:nth-child(12) { grid-column: 1 !important; grid-row: 6 !important; }
+    .canvas a:nth-child(13), .canvas a:nth-child(14) { grid-column: 1 !important; grid-row: 7 !important; }
+    .canvas a:nth-child(15), .canvas a:nth-child(16) { grid-column: 1 !important; grid-row: 8 !important; }
+    .canvas a:nth-child(17), .canvas a:nth-child(18) { grid-column: 1 !important; grid-row: 9 !important; }
+    .canvas a:nth-child(19), .canvas a:nth-child(20) { grid-column: 1 !important; grid-row: 10 !important; }
 }
