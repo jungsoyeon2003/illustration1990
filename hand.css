@@ -29,7 +29,7 @@ body{
     text-decoration:none;
     font-size:32px;
     font-weight:700;
-    color: black;
+    color: #1E1E1E;
     border-bottom: 3px solid transparent;
     transition: border-color 0.3s ease, opacity 0.3s ease;
 }
